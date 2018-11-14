@@ -1,0 +1,12 @@
+---
+title: "Lab 7 Rank Based Test"
+author: "Angie Bouche"
+date: "November 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Hi it's Angie. I created a new lab.
