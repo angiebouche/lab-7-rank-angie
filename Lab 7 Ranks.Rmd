@@ -26,3 +26,18 @@ kermit_hist <- ggplot(kermit, aes(x=Score.pre)) +
 kermit_hist
 ```
 
+Back to the creater
+I'm doing to do some rank based tests
+
+```{r}
+
+#Is there a significant difference in pre-talk Kermit scores for males and females?
+
+#Unpaired data, so we will use Mann-Whitney U
+
+mwu_kermit <- kermit %>% 
+  wilcox.test(Score.pre ~ Gender, data = .)
+
+```
+
+There is not a difference in ranks between females and males. 
