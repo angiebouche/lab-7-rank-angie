@@ -10,3 +10,19 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Hi it's Angie. I created a new lab.
+
+Collaborators!!!!!!!!
+I'm going to make some histogram s
+
+```{r}
+library(tidyverse)
+
+kermit <- read_csv("kermit.csv")
+
+kermit_hist <- ggplot(kermit, aes(x=Score.pre)) +
+  geom_histogram() +
+  facet_wrap(~Gender)
+
+kermit_hist
+```
+
